@@ -16,10 +16,10 @@
     "custom uploader",
     "image uploader"
   ],
-  "author": "ardasoyturk",
+  "author": "aritz331",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ardasoyturk/custom-image-uploader/issues"
+    "url": "https://github.com/aritz331/image/issues"
   },
   "homepage": "https://github.com/ardasoyturk/custom-image-uploader#readme",
   "dependencies": {
