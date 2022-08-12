@@ -1,7 +1,7 @@
 module.exports = {
-    "token": "superdupertokengoeshere",
-    "domain": "https://example.com/", // dont forget the / at the end,
-    "imageDir": "i",
+    "token": "yeaidkwhatthisis",
+    "domain": "https://i.aritz331.tk/", // dont forget the / at the end,
+    "imageDir": "yea",
     "fieldname": "file",
     "randomLength": 5
 }
