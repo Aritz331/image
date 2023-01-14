@@ -1,6 +1,6 @@
 module.exports = {
     "token": "yeaidkwhatthisis",
-    "domain": "https://i.aritz331.tk/", // dont forget the / at the end,
+    "domain": "https://i.aritz331.tk",
     "imageDir": "img",
     "fieldname": "file",
     "randomLength": 5
