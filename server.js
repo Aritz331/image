@@ -4,7 +4,7 @@ const fs = require('fs');
 const app = express();
 const config = require('./config.js');
 app.use(fileUpload());
-app.use(express.static(config.imageDir));
+app.use('/', express.static(__dirname + '/' + config.imageDir));
 app.enable('trust proxy');
 
 app.post('/upload', function(req, res) {
@@ -14,13 +14,14 @@ app.post('/upload', function(req, res) {
       if (err) {
           return res.status(500).json({success:false});
       } else {
-          return res.status(200).json({success: true, url: `${config.domain}/${config.imageDir}/${fileName}`})
+          return res.status(200).json({success: true, url: `${config.domain}/${fileName}`})
       }
     })
   } else {
     res.status(403).send('Forbidden');
   }
 });
+
 function makeid(length) {
    var result = '';
    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
